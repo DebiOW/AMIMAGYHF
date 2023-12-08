@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/askAdviceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incomeInput"
+        android:text="Click Me To generate Advice" />
+    <EditText
+        android:id="@+id/incomeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter income in HuF"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/spendingInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter spending in HuF"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/adviceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/askAdviceButton"
+        android:layout_marginTop="16dp"
+        android:text="Output will appear here"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/counterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/askAdviceButton"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="18sp" />
+</LinearLayout>
